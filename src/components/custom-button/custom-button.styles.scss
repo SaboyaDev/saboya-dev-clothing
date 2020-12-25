@@ -20,7 +20,12 @@
 		border: 1px solid black;
 	}
 
-	& .google {
-		background-color: royalblue;
+	&.google-sign-in {
+		background-color: #4285f4;
+		color: white;
+
+		&:hover {
+			background-color: #357ae8;
+		}
 	}
 }
