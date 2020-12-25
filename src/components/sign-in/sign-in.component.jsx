@@ -19,7 +19,10 @@ export class SignIn extends Component {
 	handleSubmit = e => {
 		e.preventDefault();
 
-		this.setState({ email: '', password: '' });
+		this.setState({
+			email: '',
+			password: '',
+		});
 	};
 
 	handleChange = e => {
@@ -39,7 +42,7 @@ export class SignIn extends Component {
 						type='email'
 						name='email'
 						value={this.state.email}
-						handleChange={handleChange}
+						onChange={handleChange}
 						required
 						label='Email'
 					/>
@@ -47,7 +50,7 @@ export class SignIn extends Component {
 						type='password'
 						name='password'
 						value={this.state.password}
-						handleChange={handleChange}
+						onChange={handleChange}
 						required
 						label='Password'
 					/>
