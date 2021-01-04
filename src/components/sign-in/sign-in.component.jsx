@@ -29,6 +29,11 @@ export class SignIn extends Component {
 				password: '',
 			});
 		} catch (error) {
+			this.setState({
+				email: '',
+				password: '',
+			});
+			alert(`Error: ${error.message}`);
 			console.log('error', error.message);
 		}
 	};
